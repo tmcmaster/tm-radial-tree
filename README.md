@@ -1,6 +1,6 @@
 # \<tm-radial-tree>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+Web component tm-radial-tree is for displaying a tree of data radially.
 
 ## Installation
 ```bash
@@ -14,24 +14,4 @@ npm i tm-radial-tree
 </script>
 
 <tm-radial-tree></tm-radial-tree>
-```
-
-## Testing using karma (if applied by author)
-```bash
-npm run test
-```
-
-## Testing using karma via browserstack (if applied by author)
-```bash
-npm run test:bs
-```
-
-## Demoing using storybook (if applied by author)
-```bash
-npm run storybook
-```
-
-## Linting (if applied by author)
-```bash
-npm run lint
 ```

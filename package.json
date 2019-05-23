@@ -1,19 +1,16 @@
 {
   "name": "tm-radial-tree",
   "version": "0.0.0",
-  "description": "Webcomponent tm-radial-tree following open-wc recommendations",
+  "description": "Web component tm-radial-tree is for displaying a tree of data radially.",
   "author": "tm-radial-tree",
-  "homepage": "https://github.com/open-wc/open-wc/",
+  "homepage": "https://tmcmaster.github..io/tm-radial-tree/",
   "license": "MIT",
-  "repository": "https://github.com/open-wc/open-wc/",
+  "repository": "https://github.com/tmcmaster/tm-radial-tree/",
   "scripts": {
     "start": "owc-dev-server --open demo",
-    "site:build": "npm run storybook:build",
-    "storybook": "start-storybook -p 9001",
-    "storybook:build": "build-storybook -o _site -s storybook-static",
     "build": "rimraf dist && rollup -c rollup.config.js",
-    "start:build": "http-server dist -o -c-1",
-    "watch:build": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1"
+    "site": "http-server dist -o -c-1",
+    "site:watch": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1"
   },
   "dependencies": {
     "lit-html": "^1.0.0",
