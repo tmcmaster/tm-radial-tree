@@ -13,8 +13,9 @@
     "site:watch": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1"
   },
   "dependencies": {
-    "lit-html": "^1.0.0",
-    "lit-element": "^2.0.1"
+    "@polymer/paper-input": "^3.0.2",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
   },
   "devDependencies": {
     "owc-dev-server": "^0.3.0",
