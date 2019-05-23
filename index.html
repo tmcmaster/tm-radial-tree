@@ -9,19 +9,67 @@
     * {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      //font-family: sans-serif;
     }
 
     body {
       background-color: #ededed;
     }
+
+    tm-radial-tree {
+      width: 98vw;
+      height: 98vh;
+    }
+
+    .relative {
+      display:inline-block;
+      position: relative;
+      width: 80vw;
+      height: 50vh;
+    }
+
+    .stretch {
+      display:inline-block;
+      position: relative;
+      width: 150px;
+    }
+    span {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      box-sizing: border-box;
+      border: solid green 1px;
+    }
   </style>
   <title>tm-radial-tree</title>
 </head>
 <body>
-  <tm-radial-tree></tm-radial-tree>
 
-  <script type="module" src="./src/tm-radial-tree.js"></script>
+  <tm-hand-drawn-outline class="stretch">
+    <span>sdfsfds</span><span>sdfsfds</span><span>sdfsfds</span><span>sdfsfds</span>
+  </tm-hand-drawn-outline>
+
+  <tm-hand-drawn-outline class="relative">
+    <span>sdfsfds</span><span>sdfsfds</span><span>sdfsfds</span><span>sdfsfds</span>
+  </tm-hand-drawn-outline>
+
+
+  <!--  <svg width="1100" height="1000">-->
+
+<!--    <path d="M100,200 Q300,180 600,200 T1000 200" fill="none" stroke="#000" stroke-width="1px" />-->
+<!--    <path d="M100,600 Q300,580 600,600 T1000 600" fill="none" stroke="#000" stroke-width="1px" />-->
+
+<!--    <path d="M100,200 Q120,280 100,400 T100 600" fill="none" stroke="#000" stroke-width="1px" />-->
+<!--    <path d="M1000,200 Q1020,280 1000,400 T1000 600" fill="none" stroke="#000" stroke-width="1px" />-->
+
+
+<!--  </svg>-->
+
+<!--  <tm-radial-tree id="a"></tm-radial-tree>-->
+
+<!--  <script type="module" src="./src/tm-radial-tree.js"></script>-->
+  <script type="module" src="./src/tm-hand-drawn-outline.js"></script>
+
 </body>
 
 </html>
