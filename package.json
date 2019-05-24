@@ -10,6 +10,7 @@
     "start": "owc-dev-server --open demo",
     "build": "rimraf dist && rollup -c rollup.config.js",
     "site": "http-server dist -o -c-1",
+    "deploy": "rsync -a --delete dist/ docs/",
     "site:watch": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1"
   },
   "dependencies": {

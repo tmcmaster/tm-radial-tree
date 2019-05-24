@@ -1,4 +1,4 @@
-import {html, css, LitElement} from 'lit-element';
+import {html, LitElement} from 'lit-element';
 
 import '@polymer/paper-input/paper-input';
 import * as d3 from 'd3';
@@ -50,7 +50,7 @@ export default class TmRadialTree extends LitElement {
           border: solid blue 1px;
         }
       </style>
-<!--      <h2>${this.heading}</h2>-->
+      <h2>${this.heading}</h2>
       <div id="a">
           
       </div>

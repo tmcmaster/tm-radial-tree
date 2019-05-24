@@ -1,7 +1,7 @@
-import {html, css, LitElement} from 'lit-element';
+import {html, LitElement} from 'lit-element';
 
 import '@polymer/paper-input/paper-input';
-import * as d3 from 'd3';
+//import * as d3 from 'd3';
 
 export default class TmHandDrawnOutline extends LitElement {
 
