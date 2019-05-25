@@ -7,11 +7,11 @@
   "license": "MIT",
   "repository": "https://github.com/tmcmaster/tm-radial-tree/",
   "scripts": {
-    "start": "owc-dev-server --open demo",
-    "build": "rimraf dist && rollup -c rollup.config.js",
-    "site": "http-server dist -o -c-1",
-    "deploy": "rsync -a --delete dist/ docs/",
-    "site:watch": "rimraf dist && rollup --watch -c rollup.config.js & http-server dist -o -c-1"
+    "dev": "owc-dev-server --open demo",
+    "docs": "http-server docs -o -c-1",
+    "build": "rimraf docs && rollup -c rollup-docs.config.js",
+    "build:watch": "rimraf docs && rollup --watch -c rollup-docs.config.js & http-server docs -o -c-1",
+    "build:release": "rimraf release && rollup -c rollup-release.config.js"
   },
   "dependencies": {
     "@polymer/paper-input": "^3.0.2",
