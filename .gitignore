@@ -3,5 +3,4 @@ package-lock.json
 node_modules
 hold
 junk
-dist
 .DS_Store
