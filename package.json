@@ -7,18 +7,23 @@
   "license": "MIT",
   "repository": "https://github.com/tmcmaster/tm-radial-tree/",
   "scripts": {
-    "clean": "rimraf dist",
     "build": "npm run release:build && npm run site:build",
+
     "site:dev": "owc-dev-server",
     "site:open": "owc-dev-server --open /",
     "site:serve": "http-server dist/site -o -c-1",
-    "site:build": "rollup -c rollup-site.config.js",
+
     "site:clean": "rimraf dist/site",
-    "site:rebuild": "npm run site:clean && npm run site:build",
-    "site:deploy": "git subtree push --prefix dist/site origin gh-pages",
-    "site:watch": "npm run site:build && rollup --watch -c rollup-site.config.js && npm run site:serve",
-    "release:build": "rimraf dist/release && rollup -c rollup-release.config.js",
-    "release:deploy": "git subtree push --prefix dist/release origin release"
+    "site:checkout": "git clone -b gh-pages git@github.com:tmcmaster/tm-radial-tree.git dist/site",
+    "site:refresh": "npm run site:clean && npm run site:checkout",
+    "site:build": "rollup -c rollup-site.config.js",
+    "site:rebuild": "npm run site:refresh && npm run site:build",
+
+    "release:clean": "rimraf dist/release",
+    "release:checkout": "git clone -b release git@github.com:tmcmaster/tm-radial-tree.git dist/release",
+    "release:refresh": "npm run release:clean && npm run release:checkout",
+    "release:build": "rollup -c rollup-release.config.js",
+    "release:rebuild": "npm run release:refresh && npm run release:build"
   },
   "dependencies": {
     "@polymer/paper-input": "^3.0.2",
