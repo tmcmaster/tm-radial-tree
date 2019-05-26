@@ -4,3 +4,4 @@ node_modules
 hold
 junk
 .DS_Store
+dist
