@@ -42,6 +42,7 @@ render(html`
     }
   </style>
   
+  <h3>Testing Hand drawn outline divs</h3>
   <tm-hand-drawn-outline class="stretch">
     <span>sdfsfds</span><span>${title}</span><span>sdfsfds</span><span>sdfsfds</span>
   </tm-hand-drawn-outline>
@@ -49,4 +50,4 @@ render(html`
     <span>sdfsfds</span><span>sdfsfds</span><span>sdfsfds</span><span>sdfsfds</span>
   </tm-hand-drawn-outline>
 
-`, document.querySelector('#demo'));
+`, document.querySelector('body'));
