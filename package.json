@@ -7,6 +7,7 @@
   "license": "MIT",
   "repository": "https://github.com/tmcmaster/tm-radial-tree/",
   "scripts": {
+    "status": "git status && npm run release:status && npm run site:status",
     "clean": "npm run release:clean && npm run site:clean",
     "build": "npm run release:build && npm run site:build",
     "checkout": "npm run release:checkout && npm run site:checkout",
@@ -17,12 +18,14 @@
     "site:test": "owc-dev-server --open /demo",
     "site:serve": "http-server dist/site -c-1",
 
+    "site:status": "cd dist/site && git status",
     "site:clean": "rimraf dist/site",
     "site:checkout": "git clone -b gh-pages git@github.com:tmcmaster/tm-radial-tree.git dist/site",
     "site:refresh": "npm run site:clean && npm run site:checkout",
     "site:build": "rollup -c rollup-site.config.js && cp demo/index.html dist/site/",
     "site:rebuild": "npm run site:refresh && npm run site:build",
 
+    "release:status": "cd dist/release && git status",
     "release:clean": "rimraf dist/release",
     "release:checkout": "git clone -b release git@github.com:tmcmaster/tm-radial-tree.git dist/release",
     "release:refresh": "npm run release:clean && npm run release:checkout",
